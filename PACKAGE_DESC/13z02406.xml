@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="packagedesc.xsd">
+	<name>13z02406</name>
+	<description>MDIS5 driver package for Z24 SRAM - MMODPROG</description>
+	<date>2010-04-15</date>
+	<revision>1.1</revision>
+	<!-- <docroot>DRIVERS/MDIS_LL/MMODPRG/DOC/html/index.html</docroot> -->
+	<!-- Models -->
+	<modellist>
+		<model>
+			<!-- standard model -->
+			<hwname>16Z024_SRAM</hwname>
+			<description>RAM controller in Chameleon FPGA</description>
+			<devnameprefix>SRAM</devnameprefix>
+			<devtype>MDIS</devtype>
+			<autoid>
+				<chamunitid>0x06</chamunitid>
+				<chamv2id>24</chamv2id>
+			</autoid>
+			<bbslot>
+				<bbismodel>CHAMELEON</bbismodel>
+			</bbslot>
+			<bbslot>
+				<bbismodel>CHAMELEON_PCITBL</bbismodel>
+			</bbslot>
+		</model>
+	</modellist>
+	<!-- Global settings -->
+	<settinglist>
+		<setting hidden="true">
+			<name>ID_CHECK</name>
+			<type>U_INT32</type>
+			<defaultvalue>0</defaultvalue>
+		</setting>
+	</settinglist>
+	<!-- Global software modules -->
+	<swmodulelist>
+		<swmodule>
+			<name>mmodprg</name>
+			<description>Driver for 16Z024_SRAM - MMODPROG</description>
+			<type>Low Level Driver</type>
+			<makefilepath>MMODPRG/DRIVER/COM/driver.mak</makefilepath>
+		</swmodule>
+		<swmodule>
+			<name>mmodprg_4k</name>
+			<description>Driver for 16Z024_SRAM -- MMODPROG -- 4kBytes Address Space </description>
+			<type>Low Level Driver</type>
+			<makefilepath>MMODPRG/DRIVER/COM/driver_4k.mak</makefilepath>
+		</swmodule>
+    <swmodule internal="true">
+      <name>z24_ramtest</name>
+      <description>Verification program for Z24 SRAM MDIS5 driver</description>
+      <type>Driver Specific Tool</type>
+      <makefilepath>MMODPRG/TOOLS/Z24_RAMTEST/COM/program.mak</makefilepath>
+    </swmodule>
+  </swmodulelist>
+</package>

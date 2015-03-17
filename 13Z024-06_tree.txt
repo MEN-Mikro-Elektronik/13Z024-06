@@ -1,0 +1,27 @@
+===== [ Target-Tree of fileset ART/13Z024-06/13Z024-06 (1.2) ] =====
+===== [ Files in category public ] =====
+|-DRIVERS
+|  `-MDIS_LL
+|     `-MMODPRG
+|        |-DRIVER
+|        |  `-COM
+|        |     | ----------------------------- ----------------------------- 
+|        |     | driver.mak (1.3)              driver_4k.mak (1.1)           
+|        |     | driver_4k_sw.mak (1.1)        driver_sw.mak (1.3)           
+|        |     | mmodprg_drv.c (1.5)           mmodprg_min.dsc (1.1)         
+|        |     | z024_sram_4k_sw_max.dsc (1.1) z024_sram_4k_sw_min.dsc (1.1) 
+|        |     | z024_sram_max.dsc (1.2)       z024_sram_min.dsc (1.2)       
+|        |     ` z024_sram_sw_max.dsc (1.2)    z024_sram_sw_min.dsc (1.2)    
+|        `-TOOLS
+|           `-Z24_RAMTEST
+|              `-COM
+|                 | ------------------- ------------------- 
+|                 ` program.mak (1.1)   z24_ramtest.c (1.3) 
+|-INCLUDE
+|  `-COM
+|     `-MEN
+|        | ------------------- 
+|        ` mmodprg_drv.h (2.6) 
+`-PACKAGE_DESC
+   | ------------------ 
+   ` 13z02406.xml (1.5) 
