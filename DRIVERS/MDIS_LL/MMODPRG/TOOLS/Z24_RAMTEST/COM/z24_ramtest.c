@@ -40,8 +40,6 @@
  * (c) Copyright 2010 by MEN Mikro Elektronik GmbH, Nuernberg, Germany
  ****************************************************************************/
 
-static const char RCSid[]="$Id: z24_ramtest.c,v 1.3 2010/04/15 13:30:52 amorbach Exp $";
-
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -244,20 +242,20 @@ int main(int argc, char *argv[])
     stopOnFirst   = !!UTL_TSTOPT("s");
     runs          = ((str = UTL_TSTOPT("n=")) ? atoi(str) : 1);
 
-    if( (str = UTL_TSTOPT("b=")) )
-        startAddr = strtol(str, NULL, 16);
+	if( (str = UTL_TSTOPT("b=")) )
+		startAddr = strtol(str, NULL, 16);
 
 	startAddr &= 0xfffffffc;     /* addresses have to be multiple of 4 */
 
-    if( (str = UTL_TSTOPT("e=")) )
-        endAddr = strtol(str, NULL, 16);
+	if( (str = UTL_TSTOPT("e=")) )
+		endAddr = strtol(str, NULL, 16);
 	if( 0 == endAddr )
 		endAddr = SRAM_MAX;
 
 	if( endAddr > SRAM_MAX )
 		endAddr = SRAM_MAX;
 
-    FAIL_UNLESS(endAddr > startAddr);
+	FAIL_UNLESS(endAddr > startAddr);
 
     /*--------------------+
     |  open device        |

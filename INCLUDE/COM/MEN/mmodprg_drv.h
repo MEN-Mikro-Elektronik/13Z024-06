@@ -86,7 +86,7 @@ MMODPRG_SetValue( MDIS_PATH path, int code, int offset, u_int32 value )
     blk.size = sizeof( pb );
     blk.data = (void*)&pb;
 
-    return( M_setstat( path, code, (int32)&blk ) );
+    return( M_setstat( path, code, (INT32_OR_64)&blk ) );
 }
 
 #define MMODPRG_SetD8( path, offset, val )   \
