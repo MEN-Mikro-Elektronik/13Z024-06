@@ -13,32 +13,23 @@
  *     Switches: _ONE_NAMESPACE_PER_DRIVER_
  *               _LL_DRV_
  *
- *-------------------------------[ History ]---------------------------------
- *
- * $Log: mmodprg_drv.h,v $
- * Revision 2.6  2010/04/15 13:31:07  amorbach
- * R: driver ported to MDIS5, new MDIS_API and men_typs
- * M: for backward compatibility to MDIS4 optionally define new types
- *
- * Revision 2.5  2006/03/01 18:59:01  cs
- * added support for various driver variants (different addr space sizes)
- *
- * Revision 2.4  2005/11/17 16:03:36  ub
- * fixed: GNU-C compiler not recognized
- *
- * Revision 2.3  2005/08/23 14:45:00  ub
- * inline declaration disabled for non-GCC compilers
- *
- * Revision 2.2  2004/09/09 14:18:36  ub
- * - added get/setstat codes for hardware access
- * - added some macros for easier use of get/setstats
- *
- * Revision 2.1  2002/06/06 15:35:00  kp
- * Initial Revision
- *
  *---------------------------------------------------------------------------
  * (c) Copyright 2010 by MEN mikro elektronik GmbH, Nuernberg, Germany
  ****************************************************************************/
+/*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 2 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 
 #ifndef _MMODPRG_DRV_H
 #define _MMODPRG_DRV_H
