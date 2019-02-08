@@ -15,30 +15,24 @@
  *               drivers:   mmodprg
  *     \switches see usage()
  */
- /*-------------------------------[ History ]--------------------------------
- *
- * $Log: z24_ramtest.c,v $
- * Revision 1.3  2010/04/15 13:30:52  amorbach
- * R:1. Porting to MDIS5
- * 2. warning: *** sscanf() not allowed in portable MDIS examples/tools
- * 3. No error message if end addr < start addr
- * 4. Warnings: signed/unsigned
- * M:1. changed according to MDIS Porting Guide 0.8
- * 2. Use strtol() instaed of sscanf()
- * 3. Plausibility check added for end addr and start addr
- * 4. Variables type changed to u_int32
- *
- * Revision 1.2  2006/03/01 12:12:09  cs
- * adapted for Z24_SRAM
- *
- * Revision 1.1  2006/02/24 17:27:19  cs
- * Initial Revision
- *
- *
- *
+ /*
  *---------------------------------------------------------------------------
  * (c) Copyright 2010 by MEN Mikro Elektronik GmbH, Nuernberg, Germany
  ****************************************************************************/
+/*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 2 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 
 #include <stdio.h>
 #include <string.h>

@@ -13,30 +13,23 @@
  *     Switches: _ONE_NAMESPACE_PER_DRIVER_, MAC_BYTESWAP,
  *               MMODPROG_ADDRSPACE_SIZE
  *
- *-------------------------------[ History ]---------------------------------
- *
- * $Log: mmodprg_drv.c,v $
- * Revision 1.5  2010/04/15 13:30:36  amorbach
- * R: Porting to MDIS5
- * M: changed according to MDIS Porting Guide 0.8
- *
- * Revision 1.4  2006/03/01 18:58:42  cs
- * moved defines MAC_BYTESWAP, ID_SW and ADDRSPACE_SIZE to makefiles
- * added support for various driver variants (different address space sizes)
- * cosmetics
- *
- * Revision 1.3  2005/08/23 14:44:58  ub
- * some typecasts to satisfy VC 6.0
- *
- * Revision 1.2  2004/09/09 14:13:20  ub
- * added get/setstats to access arbitrary hardware registers
- *
- * Revision 1.1  2002/06/06 15:34:56  kp
- * Initial Revision
- *
  *---------------------------------------------------------------------------
  * (c) Copyright 2010 by MEN Mikro Elektronik GmbH, Nuernberg, Germany
  ****************************************************************************/
+/*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 2 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 
 static const char RCSid[]="$Id: mmodprg_drv.c,v 1.5 2010/04/15 13:30:36 amorbach Exp $";
 
