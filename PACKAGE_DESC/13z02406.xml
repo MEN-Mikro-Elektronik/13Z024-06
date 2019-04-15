@@ -4,7 +4,6 @@
 	<description>MDIS5 driver package for Z24 SRAM - MMODPROG</description>
 	<date>2010-04-15</date>
 	<revision>1.1</revision>
-	<!-- <docroot>DRIVERS/MDIS_LL/MMODPRG/DOC/html/index.html</docroot> -->
 	<!-- Models -->
 	<modellist>
 		<model>
