@@ -46,11 +46,11 @@
 			<type>Low Level Driver</type>
 			<makefilepath>MMODPRG/DRIVER/COM/driver_4k.mak</makefilepath>
 		</swmodule>
-    <swmodule internal="true">
-      <name>z24_ramtest</name>
-      <description>Verification program for Z24 SRAM MDIS5 driver</description>
-      <type>Driver Specific Tool</type>
-      <makefilepath>MMODPRG/TOOLS/Z24_RAMTEST/COM/program.mak</makefilepath>
-    </swmodule>
-  </swmodulelist>
+		<swmodule internal="true">
+			<name>z24_ramtest</name>
+			<description>Verification program for Z24 SRAM MDIS5 driver</description>
+			<type>Driver Specific Tool</type>
+			<makefilepath>MMODPRG/TOOLS/Z24_RAMTEST/COM/program.mak</makefilepath>
+		</swmodule>
+	</swmodulelist>
 </package>
