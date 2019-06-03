@@ -4,8 +4,6 @@
  *      Project: M-module driver (MDIS4)
  *
  *       Author: kp
- *        $Date: 2010/04/15 13:30:36 $
- *    $Revision: 1.5 $
  *
  *  Description: Low-level driver to program M-Module ID on any M-module
  *
@@ -31,7 +29,6 @@
 * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-static const char RCSid[]="$Id: mmodprg_drv.c,v 1.5 2010/04/15 13:30:36 amorbach Exp $";
 
 #include <MEN/men_typs.h>   /* system dependent definitions   */
 #include <MEN/maccess.h>    /* hw access macros and types     */
@@ -45,6 +42,8 @@ static const char RCSid[]="$Id: mmodprg_drv.c,v 1.5 2010/04/15 13:30:36 amorbach
 #include <MEN/ll_defs.h>    /* low-level driver definitions   */
 #include <MEN/ll_entry.h>   /* low-level driver jump table  */
 #include <MEN/mmodprg_drv.h>   /* MMODPRG driver header file */
+
+static const char IdentString[]=MENT_XSTR(MAK_REVISION);
 
 /*-----------------------------------------+
 |  DEFINES                                 |
@@ -819,7 +818,7 @@ static int32 MMODPRG_Info(
  ****************************************************************************/
 static char* Ident( void )	/* nodoc */
 {
-    return( "MMODPRG - MMODPRG low level driver: $Id: mmodprg_drv.c,v 1.5 2010/04/15 13:30:36 amorbach Exp $" );
+    return( (char*) IdentString );
 }
 
 /********************************* Cleanup **********************************

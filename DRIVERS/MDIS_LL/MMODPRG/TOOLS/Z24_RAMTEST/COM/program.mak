@@ -1,8 +1,6 @@
 #***************************  M a k e f i l e  *******************************
 #
 #         Author: ub/cs
-#          $Date: 2006/02/24 17:27:16 $
-#      $Revision: 1.1 $
 #
 #    Description: Makefile definitions for z24 SRAM test tool
 #
@@ -23,7 +21,12 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 MAK_NAME=z24_ramtest
-MAK_SWITCH=
+# the next line is updated during the MDIS installation
+STAMPED_REVISION="13Z024-06_01_03-3-g520fb94-dirty_2019-05-30"
+
+DEF_REVISION=MAK_REVISION=$(STAMPED_REVISION)
+MAK_SWITCH= \
+		$(SW_PREFIX)$(DEF_REVISION)
 
 MAK_LIBS=$(LIB_PREFIX)$(MEN_LIB_DIR)/mdis_api$(LIB_SUFFIX)	\
          $(LIB_PREFIX)$(MEN_LIB_DIR)/usr_oss$(LIB_SUFFIX)	\

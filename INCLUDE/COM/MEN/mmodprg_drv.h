@@ -3,8 +3,6 @@
  *         Name: mmodprg_drv.h
  *
  *       Author: kp
- *        $Date: 2010/04/15 13:31:07 $
- *    $Revision: 2.6 $
  *
  *  Description: Header file for MMODPRG driver
  *               - MMODPRG specific status codes

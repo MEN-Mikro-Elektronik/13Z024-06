@@ -1,8 +1,6 @@
 #***************************  M a k e f i l e  *******************************
 #
 #         Author: kp
-#          $Date: 2006/03/01 18:58:49 $
-#      $Revision: 1.1 $
 #
 #    Description: Makefile definitions for the MMODPRG driver (swapped variant)
 #                 default: ADDRSPACE_SIZE = 0x1000 bytes
@@ -24,8 +22,13 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 MAK_NAME=mmodprg_4k_sw
+# the next line is updated during the MDIS installation
+STAMPED_REVISION="13Z024-06_01_03-3-g520fb94-dirty_2019-05-30"
+
+DEF_REVISION=MAK_REVISION=$(STAMPED_REVISION)
 
 MAK_SWITCH=$(SW_PREFIX)MAC_MEM_MAPPED\
+		$(SW_PREFIX)$(DEF_REVISION) \
            $(SW_PREFIX)MAC_BYTESWAP \
            $(SW_PREFIX)ID_SW \
            $(SW_PREFIX)MMODPRG_VARIANT=MMODPRG_4K_SW \

@@ -6,8 +6,6 @@
 /*!
  *         \file z24_ramtest.c
  *       \author ulrich.bogensperger@men.de/cs
- *        $Date: 2010/04/15 13:30:52 $
- *    $Revision: 1.3 $
  *
  *        \brief Test program for the Z24 SRAM controller chameleon FPGA
  *
@@ -45,11 +43,11 @@
 #include <MEN/mdis_api.h>
 #include <MEN/mmodprg_drv.h>
 
+static const char IdentString[]=MENT_XSTR(MAK_REVISION);
+
 /*--------------------------------------+
 |   DEFINES                             |
 +--------------------------------------*/
-#define REV         "1.0"               /* program revision */
-
 
 /* some error handling macros */
 
@@ -178,7 +176,7 @@ static void usage(void)
     }
 
     printf("\n");
-    printf("(c) 2006 by MEN Mikro Elektronik GmbH. Revision %s\n\n", REV);
+    printf("Copyright (c) 2010-2019, MEN Mikro Elektronik GmbH\n%s\n", IdentString);
 }
 
 /********************************* main *************************************
