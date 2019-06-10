@@ -2,8 +2,8 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="packagedesc.xsd">
 	<name>13z02406</name>
 	<description>MDIS5 driver package for Z24 SRAM - MMODPROG</description>
-	<date>2010-04-15</date>
-	<revision>1.1</revision>
+	<date>2019-06-07</date>
+	<revision>13Z024-06_01_03-5-gacaceed</revision>
 	<!-- Models -->
 	<modellist>
 		<model>
