@@ -1,11 +1,13 @@
 /*********************  P r o g r a m  -  M o d u l e ***********************
  *
  *         Name: mmodprg_drv.c
- *      Project: M-module driver (MDIS4)
+ *      Project: M-module driver (MDIS5)
  *
  *       Author: kp
  *
- *  Description: Low-level driver to program M-Module ID on any M-module
+ *  Description: Description: Low-level driver to perform 8/16/32-bit read/write
+ *               access to various HW devices (e.g. M-Modules, 16Z024_SRAM SRAM
+ *               Controller)
  *
  *     Required: OSS, DESC, DBG, ID libraries
  *     Switches: _ONE_NAMESPACE_PER_DRIVER_, MAC_BYTESWAP,
