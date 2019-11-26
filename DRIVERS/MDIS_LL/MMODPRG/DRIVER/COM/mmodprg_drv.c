@@ -14,7 +14,7 @@
  *               MMODPROG_ADDRSPACE_SIZE
  *
  *---------------------------------------------------------------------------
- * Copyright (c) 2010-2019, MEN Mikro Elektronik GmbH
+ * Copyright 2010-2019, MEN Mikro Elektronik GmbH
  ****************************************************************************/
 /*
 * This program is free software: you can redistribute it and/or modify
